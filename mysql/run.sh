@@ -1,7 +1,7 @@
 :
 mysql-ctl cli << EOF
 use c9 ;
-source storedb.sql ;
+source $1 ;
 show tables ;
 exit
 EOF

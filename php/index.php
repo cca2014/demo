@@ -3,6 +3,9 @@
 // Press the 'Run' button on the top to start the web server,
 // then click the URL that is emitted to the Output tab of the console
 
-echo 'Hello world from Cloud9!';
+
+echo '<center>Hello world from Cloud9!</center><br/><hr/><br/>';
+
+phpinfo();
 
 ?>
