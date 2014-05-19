@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+Options -MultiViews
+RewriteEngine on
+RewriteRule ^in/([A-Za-z0-9\+\-]+)/?$ linkedin.php?u=$1
+</IfModule>
