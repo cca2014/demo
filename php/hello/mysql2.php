@@ -1,22 +1,33 @@
 <html>
 
+
 <?php
-	$db = @mysql_connect( '127.1.250.1', 'cca2014', '' ) ;
-	if ( !$db ) {
-		die("Database Error") ;
-	}
-	$rs = mysql_db_query( 'mysql', 'select host, user, password from user', $db ) ;
-	$nrows = @mysql_num_rows( $rs ) ;
-	print "$nrows records fetched.<br/>" ;
-	$i=0;
-	while ($i < $nrows) {
-  		$host=mysql_result($rs,$i,"host");
-  		$user=mysql_result($rs,$i,"user");
-		$pwd=mysql_result($rs,$i,"password");
-		print "[$i] = [$host] [$user] [$pwd]<br/>" ;	
-		$i++ ;
-	}
-	mysql_close();
+
+    // Create Connection
+    $con=mysqli_connect("127.1.250.1","cca2014","","c9");
+
+    // Check Connection
+    if (mysqli_connect_errno()) {
+        echo "Failed to connect to MySQL: " . mysqli_connect_error() . "<br/>";
+    }
+    else {
+        echo "Connection Successful!<br/>" ;
+    }
+    
+    // execute query
+    $result = mysqli_query($con,"select host, user from mysql.user");
+	echo $result->num_rows . " records fetch. <br/>" ;
+
+    // show rows
+    echo 'rows : ' . $result->num_rows . '<br/>';
+    while($row = mysqli_fetch_array($result)) {
+        echo $row['host'] . ": " . $row['user'] ;
+        echo "<br>";
+    }    
+
+    // close connection
+    mysqli_close($con);
+
 ?>
 
 </html>

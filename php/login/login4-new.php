@@ -9,17 +9,24 @@
   if ( $username != ""  )
   {
 
-      $db_username="cca2014";
-	  $db_password="";
-	  $database="c9";
-	  $hashed_password = crypt($password,'saltkey') ;
-	  mysql_connect("127.1.250.1",$db_username,$db_password);
-	  @mysql_select_db($database) or die( "Unable to select database");
+ 	  $hashed_password = crypt($password,'saltkey') ;
+	  
+       // Create Connection
+       $con=mysqli_connect("127.1.250.1","cca2014","","c9");
+
+       // Check Connection
+       if (mysqli_connect_errno()) {
+            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+       }
+
+      // create new record 
 	  $query="insert into users (username,password) values('$username', '$hashed_password')";
-	  //print $query ;
-	  $result=mysql_query($query);
-	  $num=mysql_numrows($result);
-	  mysql_close();
+	  $result = mysqli_query( $con, $query );
+      $num = $result->num_rows ;
+
+      // Close Connection
+      mysqli_close($con);	  
+
 
 	  if ( $num > 0 )
 	  {

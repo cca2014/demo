@@ -3,15 +3,23 @@
 
 <?php
 
-	$db = @mysql_connect( '127.1.250.1', 'cca2014', '') ;
-	if ( !$db ) {
-		echo "Error Connecting<br>" ;
-	}
+    // Create Connection
+    $con=mysqli_connect("127.1.250.1","cca2014","","c9");
 
-	$rs = mysql_db_query( 'mysql', 'select * from user', $db ) ;
-	$nrows = @mysql_num_rows( $rs ) ;
-	echo "$nrows records fetch.<br>" ;
+    // Check Connection
+    if (mysqli_connect_errno()) {
+        echo "Failed to connect to MySQL: " . mysqli_connect_error() . "<br/>";
+    }
+    else {
+        echo "Connection Successful!<br/>" ;
+    }
+    
+    // execute query
+    $result = mysqli_query($con,"select * from mysql.user");
+	echo $result->num_rows . " records fetch.<br>" ;
 
+    // close connection
+    mysqli_close($con);
 	
 ?>
 

@@ -25,6 +25,7 @@
     // Query some records
     $result = mysqli_query($con,"select * from hello");
 
+    echo 'rows : ' . $result->num_rows ;
     while($row = mysqli_fetch_array($result)) {
         echo $row['who'] . ": " . $row['msg'] . " " ;
         echo "<br>";
@@ -39,6 +40,11 @@
 
 <!--
 
+unix> cd mysql
+unix> mysql-ctl cli
+
+mysql> create table hello ( msg varchar(255), who varchar(10), why varchar(20) ) ;
+
 mysql> describe hello ;
 +-------+--------------+------+-----+---------+-------+
 | Field | Type         | Null | Key | Default | Extra |
@@ -47,5 +53,9 @@ mysql> describe hello ;
 | who   | varchar(10)  | YES  |     | NULL    |       |
 | why   | varchar(20)  | YES  |     | NULL    |       |
 +-------+--------------+------+-----+---------+-------+
+
+mysql> insert into hello ( msg, who, why ) values ( 'Hello World 1', 'admin', 'testing' ) ;
+
+mysql> insert into hello ( msg, who, why ) values ( 'Hello World 2', 'admin', 'testing' ) ;
 
 -->

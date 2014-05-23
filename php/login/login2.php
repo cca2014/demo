@@ -8,17 +8,20 @@
 
   if ( $username != ""  )
   {
-	  $db_username="cca2014";
-	  $db_password="";
-	  $database="c9";
+     // Create Connection
+     $con=mysqli_connect("127.1.250.1","cca2014","","c9");
 
-	  mysql_connect("127.1.250.1",$db_username,$db_password);
-	  @mysql_select_db($database) or die( "Unable to select database");
-	  $query="SELECT 1 from users where username='$username' and password='$password'";
-	  //print $query ;
-	  $result=mysql_query($query);
-	  $num=mysql_numrows($result);
-	  mysql_close();
+     // Check Connection
+     if (mysqli_connect_errno()) {
+            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+     }
+
+    // Query some records
+    $result = mysqli_query( $con,"SELECT 1 from users where username='$username' and password='$password'");
+    $num = $result->num_rows ;
+
+    // Close Connection
+    mysqli_close($con);
 	  
 	  if ( $num <1 )
 	  {
@@ -29,7 +32,7 @@
 &nbsp;
 &nbsp;
 
-<form method="POST" action="<?php print $_SERVER['PHP_SELF'] ; ?>">
+<form method="POST" action="<?php print htmlspecialchars($_SERVER['PHP_SELF']) ; ?>">
 	<blockquote>
 		<blockquote>
 			<blockquote>
