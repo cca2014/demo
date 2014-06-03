@@ -22,7 +22,7 @@
     echo 'rows : ' . $result->num_rows . '<br/>';
     while($row = mysqli_fetch_array($result)) {
         echo $row['host'] . ": " . $row['user'] ;
-        echo "<br>";
+        echo "<br/>";
     }    
 
     // close connection

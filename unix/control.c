@@ -9,34 +9,38 @@
  void main()
  {
      // while statement  
-     int test = 10;
+     int test = 5;
      while( test > 0 )
      {
        printf( "(while) test = %d\n", test );
-       test = test - 2;
+       test = test - 1;
      }
-     
+
+
      // do while
-     test = 10;
+     test = 5;
      do 
      {
        printf( "(do while) test = %d\n", test );
-       test = test - 2;
+       test = test - 1;
      }
      while( test > 0 );
-     
+
+
      // for
-     for( test = 10; test > 0; test = test - 2 )
+     for( test = 5; test > 0; test = test - 1 )
      {
        printf( "(for) test = %d\n", test );
      }
-     
+
+
      // if-then-else
     fire1( LASER ) ;
     
     // switch
     fire2( ROCKET ) ;
-     
+    
+    
  }
  
 void fire1( int weapon )

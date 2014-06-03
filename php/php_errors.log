@@ -1,0 +1,46 @@
+[31-May-2014 09:36:20] PHP Notice:  Undefined index: user in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/cookie.php on line 7
+[31-May-2014 09:36:20] PHP Stack trace:
+[31-May-2014 09:36:20] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/cookie.php:0
+[31-May-2014 09:41:07] PHP Notice:  Undefined index: user in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/cookie.php on line 7
+[31-May-2014 09:41:07] PHP Stack trace:
+[31-May-2014 09:41:07] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/cookie.php:0
+[31-May-2014 09:43:08] PHP Notice:  Undefined index: user in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/cookie.php on line 7
+[31-May-2014 09:43:08] PHP Stack trace:
+[31-May-2014 09:43:08] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/cookie.php:0
+[31-May-2014 09:44:19] PHP Notice:  Undefined index: user in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/cookie.php on line 7
+[31-May-2014 09:44:19] PHP Stack trace:
+[31-May-2014 09:44:19] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/cookie.php:0
+[31-May-2014 09:51:53] PHP Notice:  Undefined index: user in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/cookie.php on line 8
+[31-May-2014 09:51:53] PHP Stack trace:
+[31-May-2014 09:51:53] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/cookie.php:0
+[31-May-2014 09:51:53] PHP Notice:  Undefined index: count in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/cookie.php on line 9
+[31-May-2014 09:51:53] PHP Stack trace:
+[31-May-2014 09:51:53] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/cookie.php:0
+[31-May-2014 09:52:03] PHP Notice:  Undefined index: user in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/cookie.php on line 8
+[31-May-2014 09:52:03] PHP Stack trace:
+[31-May-2014 09:52:03] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/cookie.php:0
+[31-May-2014 09:52:03] PHP Notice:  Undefined index: count in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/cookie.php on line 9
+[31-May-2014 09:52:03] PHP Stack trace:
+[31-May-2014 09:52:03] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/cookie.php:0
+[31-May-2014 11:53:22] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/tracking.php on line 5
+[31-May-2014 11:53:33] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/tracking.php on line 5
+[31-May-2014 11:54:06] PHP Notice:  Undefined index: mycookie in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/tracking.php on line 2
+[31-May-2014 11:54:06] PHP Stack trace:
+[31-May-2014 11:54:06] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/tracking.php:0
+[31-May-2014 14:21:46] PHP Parse error:  syntax error, unexpected '<' in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/hello2.php on line 12
+[31-May-2014 14:21:52] PHP Parse error:  syntax error, unexpected '<' in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/hello2.php on line 12
+[31-May-2014 14:39:31] PHP Notice:  Undefined index: count in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/sessionv2.php on line 5
+[31-May-2014 14:39:31] PHP Stack trace:
+[31-May-2014 14:39:31] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/sessionv2.php:0
+[31-May-2014 14:39:31] PHP Notice:  Undefined index: user in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/sessionv2.php on line 6
+[31-May-2014 14:39:31] PHP Stack trace:
+[31-May-2014 14:39:31] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/sessionv2.php:0
+[31-May-2014 14:39:31] PHP Notice:  Undefined index: item1 in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/sessionv2.php on line 7
+[31-May-2014 14:39:31] PHP Stack trace:
+[31-May-2014 14:39:31] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/sessionv2.php:0
+[31-May-2014 14:39:31] PHP Notice:  Undefined index: item2 in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/sessionv2.php on line 8
+[31-May-2014 14:39:31] PHP Stack trace:
+[31-May-2014 14:39:31] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/sessionv2.php:0
+[31-May-2014 14:40:19] PHP Notice:  Undefined index: mycookie in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/tracking.php on line 2
+[31-May-2014 14:40:19] PHP Stack trace:
+[31-May-2014 14:40:19] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/hello/tracking.php:0

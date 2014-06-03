@@ -15,7 +15,7 @@
     $r = mysqli_query($con,"insert into hello (msg, who, why) values ('Hello World', 'Admin', 'Testing')" );
     if ( $r )
     {
-        echo 'Successfuly Inserted' ;
+        echo 'Successfuly Inserted<br/>' ;
     }
     else
     {
@@ -23,9 +23,9 @@
     }
     
     // Query some records
-    $result = mysqli_query($con,"select * from hello");
+    $result = mysqli_query($con,"select who, msg from hello");
 
-    echo 'rows : ' . $result->num_rows ;
+    echo 'rows : ' . $result->num_rows . "<br/>";
     while($row = mysqli_fetch_array($result)) {
         echo $row['who'] . ": " . $row['msg'] . " " ;
         echo "<br>";

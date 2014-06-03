@@ -1,5 +1,11 @@
 <HTML>
 
+<head>
+    <style>
+        #msg { color: red;}
+    </style>
+</head>
+
 <?php
   error_reporting(0);
 
@@ -25,50 +31,38 @@
 	  
 	  if ( $num <1 )
 	  {
-		  print( "<!-- Authentication Failed! -->" ) ;
+		  
 ?>
 	
-&nbsp;
-&nbsp;
-&nbsp;
-
 <form method="POST" action="<?php print htmlspecialchars($_SERVER['PHP_SELF']) ; ?>">
-	<blockquote>
-		<blockquote>
-			<blockquote>
-				<table border="1" width="55%" id="table1" style="border-width: 0px" cellspacing="5">
-					<tr>
-						<td width="122" style="border-style: none; border-width: medium">&nbsp;
-						</td>
-						<td style="border-style: none; border-width: medium">
-						<font color="#FF0000" face="Arial Narrow"><b>
-						Authentication Failed!</b></font></td>
-					</tr>
-					<tr>
-						<td width="122" style="border-style: none; border-width: medium">
-						<b><font face="Arial Narrow">Login</font></b></td>
-						<td style="border-style: none; border-width: medium">
-						<input type="text" name="username" size="34"></td>
-					</tr>
-					<tr>
-						<td width="122" style="border-style: none; border-width: medium">
-						<b><font face="Arial Narrow">Password</font></b></td>
-						<td style="border-style: none; border-width: medium">
-						<input type="password" name="password" size="34"></td>
-					</tr>
-					<tr>
-						<td style="border-style: none; border-width: medium">&nbsp;</td>
-						<td style="border-style: none; border-width: medium">
-						<input type="submit" value="Submit" name="submit">&nbsp;
-						<input type="reset" value="Reset" name="reset"></td>
-					</tr>
-				</table>
-			</blockquote>
-		</blockquote>
-	</blockquote>
-	<p>&nbsp;</p>
+<table border="0" width="55%" id="table1" style="border-width: 0px" cellspacing="5">
+  <tr>
+    <td></td>
+    <td id="msg">
+        Authentication Failed
+    </td>
+  </tr>
+  <tr>
+		<td width="122" style="border-style: none; border-width: medium">
+		<b><font face="Arial Narrow">Login</font></b></td>
+		<td style="border-style: none; border-width: medium">
+		<input type="text" name="username" size="34"></td>
+	</tr>
+  
+	<tr>
+		<td width="122" style="border-style: none; border-width: medium">
+		<b><font face="Arial Narrow">Password</font></b></td>
+		<td style="border-style: none; border-width: medium">
+		<input type="password" name="password" size="34"></td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium">&nbsp;</td>
+		<td style="border-style: none; border-width: medium">
+		<input type="submit" value="Submit" name="submit">&nbsp;
+		<input type="reset" value="Reset" name="reset"></td>
+	</tr>
+</table>
 </form>
-
 
 <?php
 	  }
@@ -104,39 +98,39 @@
   {
 ?>
 
+
 &nbsp;
 &nbsp;
 &nbsp;
 
-<form method="POST" action="<?php print $_SERVER['PHP_SELF'] ; ?>">
-	<blockquote>
-		<blockquote>
-			<blockquote>
-				<table border="1" width="55%" id="table1" style="border-width: 0px" cellspacing="5">
-					<tr>
-						<td width="122" style="border-style: none; border-width: medium">
-						<b><font face="Arial Narrow">Login</font></b></td>
-						<td style="border-style: none; border-width: medium">
-						<input type="text" name="username" size="34"></td>
-					</tr>
-					<tr>
-						<td width="122" style="border-style: none; border-width: medium">
-						<b><font face="Arial Narrow">Password</font></b></td>
-						<td style="border-style: none; border-width: medium">
-						<input type="password" name="password" size="34"></td>
-					</tr>
-					<tr>
-						<td style="border-style: none; border-width: medium">&nbsp;</td>
-						<td style="border-style: none; border-width: medium">
-						<input type="submit" value="Submit" name="submit">&nbsp;
-						<input type="reset" value="Reset" name="reset"></td>
-					</tr>
-				</table>
-			</blockquote>
-		</blockquote>
-	</blockquote>
-	<p>&nbsp;</p>
+<form method="POST" action="<?php print htmlspecialchars($_SERVER['PHP_SELF']) ; ?>">
+<table border="1" width="55%" id="table1" style="border-width: 0px" cellspacing="5">
+	<tr>
+		<td width="122" style="border-style: none; border-width: medium">
+		<b><font face="Arial Narrow">Login</font></b></td>
+		<td style="border-style: none; border-width: medium">
+		<input type="text" name="username" size="34"></td>
+	</tr>
+  
+	<tr>
+		<td width="122" style="border-style: none; border-width: medium">
+		<b><font face="Arial Narrow">Password</font></b></td>
+		<td style="border-style: none; border-width: medium">
+		<input type="password" name="password" size="34"></td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium">&nbsp;</td>
+		<td style="border-style: none; border-width: medium">
+		<input type="submit" value="Submit" name="submit">&nbsp;
+		<input type="reset" value="Reset" name="reset"></td>
+	</tr>
+</table>
 </form>
+
+&nbsp;
+&nbsp;
+&nbsp;
+
 
 <?php
   }

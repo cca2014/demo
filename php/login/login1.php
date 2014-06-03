@@ -43,34 +43,33 @@
 &nbsp;
 
 <form method="POST" action="<?php print htmlspecialchars($_SERVER['PHP_SELF']) ; ?>">
-	<blockquote>
-		<blockquote>
-			<blockquote>
-				<table border="1" width="55%" id="table1" style="border-width: 0px" cellspacing="5">
-					<tr>
-						<td width="122" style="border-style: none; border-width: medium">
-						<b><font face="Arial Narrow">Login</font></b></td>
-						<td style="border-style: none; border-width: medium">
-						<input type="text" name="username" size="34"></td>
-					</tr>
-					<tr>
-						<td width="122" style="border-style: none; border-width: medium">
-						<b><font face="Arial Narrow">Password</font></b></td>
-						<td style="border-style: none; border-width: medium">
-						<input type="password" name="password" size="34"></td>
-					</tr>
-					<tr>
-						<td style="border-style: none; border-width: medium">&nbsp;</td>
-						<td style="border-style: none; border-width: medium">
-						<input type="submit" value="Submit" name="submit">&nbsp;
-						<input type="reset" value="Reset" name="reset"></td>
-					</tr>
-				</table>
-			</blockquote>
-		</blockquote>
-	</blockquote>
-	<p>&nbsp;</p>
+<table border="1" width="55%" id="table1" style="border-width: 0px" cellspacing="5">
+	<tr>
+		<td width="122" style="border-style: none; border-width: medium">
+		<b><font face="Arial Narrow">Login</font></b></td>
+		<td style="border-style: none; border-width: medium">
+		<input type="text" name="username" size="34"></td>
+	</tr>
+  
+	<tr>
+		<td width="122" style="border-style: none; border-width: medium">
+		<b><font face="Arial Narrow">Password</font></b></td>
+		<td style="border-style: none; border-width: medium">
+		<input type="password" name="password" size="34"></td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium">&nbsp;</td>
+		<td style="border-style: none; border-width: medium">
+		<input type="submit" value="Submit" name="submit">&nbsp;
+		<input type="reset" value="Reset" name="reset"></td>
+	</tr>
+</table>
 </form>
+
+&nbsp;
+&nbsp;
+&nbsp;
+
 
 <?php
   }
