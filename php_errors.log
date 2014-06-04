@@ -1,3 +1,19 @@
-[03-Jun-2014 03:59:26] PHP Notice:  Undefined index: u in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/linkedin.php on line 3
-[03-Jun-2014 03:59:26] PHP Stack trace:
-[03-Jun-2014 03:59:26] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/linkedin.php:0
+[04-Jun-2014 03:11:08] PHP Warning:  phpinfo(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/New_York' for 'EDT/-4.0/DST' instead in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/index.php on line 3
+[04-Jun-2014 03:11:08] PHP Stack trace:
+[04-Jun-2014 03:11:08] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/index.php:0
+[04-Jun-2014 03:11:08] PHP   2. phpinfo() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/index.php:3
+[04-Jun-2014 03:14:22] PHP Warning:  phpinfo(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/New_York' for 'EDT/-4.0/DST' instead in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/index.php on line 3
+[04-Jun-2014 03:14:22] PHP Stack trace:
+[04-Jun-2014 03:14:22] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/index.php:0
+[04-Jun-2014 03:14:22] PHP   2. phpinfo() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/index.php:3
+[04-Jun-2014 03:19:50] PHP Warning:  phpinfo(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/New_York' for 'EDT/-4.0/DST' instead in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/index.php on line 3
+[04-Jun-2014 03:19:50] PHP Stack trace:
+[04-Jun-2014 03:19:50] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/index.php:0
+[04-Jun-2014 03:19:50] PHP   2. phpinfo() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/index.php:3
+[04-Jun-2014 03:28:24] PHP Warning:  phpinfo(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/New_York' for 'EDT/-4.0/DST' instead in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/index.php on line 3
+[04-Jun-2014 03:28:24] PHP Stack trace:
+[04-Jun-2014 03:28:24] PHP   1. {main}() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/index.php:0
+[04-Jun-2014 03:28:24] PHP   2. phpinfo() /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/php/index.php:3
+[04-Jun-2014 03:49:15] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/unix/shell.php on line 4
+[04-Jun-2014 03:49:20] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/unix/shell.php on line 4
+[04-Jun-2014 03:49:53] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /var/lib/stickshift/536a66da5004465a3700016e/app-root/data/855381/unix/shell.php on line 4
