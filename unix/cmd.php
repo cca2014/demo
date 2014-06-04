@@ -4,29 +4,29 @@
   $cmd=$_POST['cmd'] ;
   $msg=$_POST['commit_message'] ;
   
-  echo "COMMAND: $cmd <br/>" ;
+  #echo "COMMAND: $cmd <br/>" ;
 
   if ( $cmd == "sysinfo"  )
   {
-    $output = shell_exec("./sysinfo.sh");
+    $output = shell_exec("./sysinfo.sh 2>&1");
     echo "$output";    
   }
 
   if ( $cmd == "gitstatus"  )
   {
-    $output = shell_exec("./gitstatus.sh");
+    $output = shell_exec("./gitstatus.sh 2>&1");
     echo "$output";    
   }
 
   if ( $cmd == "gitcommit"  )
   {
-    $output = shell_exec("./gitcommit.sh '$msg'");
+    $output = shell_exec("./gitcommit.sh '$msg' 2>&1");
     echo "$output";    
   }
 
   if ( $cmd == "gitpush"  )
   {
-    $output = shell_exec("./gitpush.sh");
+    $output = shell_exec("./gitpush.sh 2>&1");
     echo "$output";    
   }
 
