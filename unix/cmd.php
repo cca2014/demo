@@ -24,5 +24,11 @@
     echo "$output";    
   }
 
+  if ( $cmd == "gitpush"  )
+  {
+    $output = shell_exec("./gitpush.sh");
+    echo "$output";    
+  }
+
       
 ?>
