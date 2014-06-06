@@ -1,6 +1,6 @@
 <html>
   <body>
-  <form action="cmd.php" method="post" target="iframe">
+  <form action="cmd.php" method="post">
     <input type="submit" name="cmd" value="sysinfo" />    &nbsp;&nbsp;
     <input type="submit" name="cmd" value="gitlog" />     &nbsp;&nbsp;
     <input type="submit" name="cmd" value="gitdiff" />    &nbsp;&nbsp;
@@ -12,7 +12,5 @@
     <input type="text" name="commit_message" size="40">   &nbsp;&nbsp;
     <hr/>
   </form>
-  <iframe id="iframe" height=5000 width=1024 name="iframe" frameborder=1 src="blank.html">
-  </iframe>
   </body>
 </html>
